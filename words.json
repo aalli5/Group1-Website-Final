@@ -1,0 +1,26 @@
+[
+    {
+      "id": "fire",
+      "word": "Fire",
+      "definition": "Something that is great or awesome",
+      "ageGroup": "Teens",
+      "category": "General",
+      "accuracy": 85,
+      "ratings": { "helpful": 90, "used": 85, "correctAgeGroup": 80 },
+      "comments": [
+        { "id": 1, "text": "This term was super helpful!", "up": 12, "down": 0 },
+        { "id": 2, "text": "Good explanation. I’d love to see more examples!", "up": 5, "down": 1 }
+      ]
+    },
+    {
+      "id": "drip",
+      "word": "Drip",
+      "definition": "Clothes that look nice on you",
+      "ageGroup": "Teens",
+      "category": "Fashion",
+      "accuracy": 75,
+      "ratings": { "helpful": 80, "used": 70, "correctAgeGroup": 90 },
+      "comments": []
+    }
+  ]
+  

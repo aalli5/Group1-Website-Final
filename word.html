@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slang Dictionary • Word Detail</title>
+  <style>
+    body { font-family:Arial,sans-serif; margin:0; padding:5px; background:#f5f5f5; }
+    .container { max-width:1200px; margin:0 auto; }
+    .back-button { position:absolute; top:20px; left:20px; background:#007bff; color:#fff; padding:15px; border:none; border-radius:50%; font-size:30px; cursor:pointer; }
+    .back-button:hover { background:#0056b3; }
+    .word-title { font-size:5em; font-weight:bold; color:#000; margin-bottom:1px; }
+    .age-group { background:#007bff; color:#fff; padding:4px 8px; border-radius:5px; font-size:0.9em; margin-left:10px; }
+    .word-definition { font-size:2.5em; color:#007bff; margin-bottom:1px; text-shadow:2px 2px 5px rgba(0,0,0,0.2); }
+    .accuracy-container { display:flex; align-items:center; margin-top:5px; font-size:0.9em; }
+    .accuracy-icon { width:16px; height:16px; background:#007bff; border-radius:50%; margin-right:8px; }
+    .accuracy-percentage { color:#333; }
+    .rating-comment-section { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin:30px 0; }
+    .rating-title, .comment-title { font-size:1.2em; font-weight:bold; color:#333; margin-bottom:20px; }
+    .rating-label { font-size:1.2em; color:#212121; margin-bottom:10px; }
+    .rating-checkboxes { display:flex; gap:10px; margin-bottom:20px; }
+    .comment-box { width:100%; padding:12px; border:2px solid #ddd; border-radius:10px; margin-bottom:20px; }
+    .submit-comment-btn { background:#007bff; color:#fff; border:none; padding:12px 25px; border-radius:20px; cursor:pointer; }
+    .submit-comment-btn:hover { background:#0056b3; }
+    .comments-header { font-size:1.5em; font-weight:bold; color:#333; margin-bottom:10px; }
+    .sample-comment { background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px; }
+    .comment-text { font-size:1.2em; color:#000; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="history.back()">←</button>
+
+    <div style="margin-top:80px;">
+      <span class="word-title"></span>
+      <span class="age-group"></span>
+    </div>
+
+    <div class="word-definition"><p></p></div>
+
+    <div class="accuracy-container">
+      <div class="accuracy-icon"></div>
+      <span class="accuracy-percentage"></span>
+    </div>
+
+    <div class="rating-comment-section">
+      <div class="rating-title">Rate This Definition:</div>
+      <div class="rating-label">Did this help you understand your kids?</div>
+      <div class="rating-checkboxes">
+        <label><input type="checkbox"/> Yes</label>
+        <label><input type="checkbox"/> No</label>
+      </div>
+      <div class="comment-title">Leave a Comment:</div>
+      <textarea class="comment-box" placeholder="Write your comment…"></textarea>
+      <button class="submit-comment-btn">Submit Comment</button>
+    </div>
+
+    <div class="comments-header">Comments</div>
+    <div class="sample-comments"></div>
+  </div>
+
+  <script src="js/word.js"></script>
+</body>
+</html>
